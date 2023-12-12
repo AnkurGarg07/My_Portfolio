@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@500&family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* first main container */
+.first {
+  height: 100vh;
+  background-color: #e7ded6;
+  
+}
+/* nav bar */
+.nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  height: 12%;
+  align-items: center;
+}
+.navContent {
+  display: flex;
+  width: 600px;
+}
+.navContent ul {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+.navContent ul li {
+  list-style: none;
+}
+.navContent ul li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+.navContent ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 166, 0);
+}
+.logo {
+  background: url(assets/AG.png);
+  background-size: cover;
+  width: 5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-left: 35px;
+}
+/* main content of first section */
+.content {
+  display: flex;
+  width: 80vw;
+  height: 75%;
+  justify-content: space-between;
+  margin: auto;
+}
+/* introduction part */
+.intro {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro .heading {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.8rem;
+}
+.description {
+  width: 100%;
+  margin-top: 8px;
+  padding-right: 200px;
+}
+.graphic {
+  display: flex;
+  margin-top: 7%;
+  width: 100%;
+  justify-content: space-between;
+}
+.graphic .startbtn button {
+  width: 8rem;
+  height: 3.3rem;
+  border-radius: 28px;
+  color: white;
+  background-color: black;
+  font-size: 1.1em;
+  font-family: "Noto Sans", sans-serif;
+}
+.graphic .startbtn button:hover {
+  cursor: pointer;
+}
+
+.graphic .play img {
+  width: 53px;
+  margin-right: 100px;
+}
+.graphic .play img:hover {
+  cursor: pointer;
+}
+/* profile section */
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+}
+.profile .box {
+  width: 45%;
+  background-color: orange;
+  top: 17rem;
+  border-radius: 60px 60px 60px 60px;
+}
+.content .profile img {
+  width: 100%;
+  z-index: 2;
+  margin-top: -74px;
+}
+/* information section */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.info1,
+.info2,
+.info3 {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 21px;
+  font-size: 50px;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+}
+.info .lower{
+  font-size: 20px;
+  opacity: 0.5;
+}
+/* third part of first section */
+.companies{
+  background-color: #ffa500;
+  /* width: 100%; */
+  height: 13%;
+  /* margin: 0px 82px 0px 82px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* second main container */
+.second{
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+  background: url(assets/second\ backgrond\ \(1\).jpg) rgba(255, 255, 255, 0.9) ;
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.second .photo{
+  width: 35%;
+}
+.second .photo img{
+  width: 100%;
+}
+
