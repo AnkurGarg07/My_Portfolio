@@ -1,0 +1,65 @@
+@media (width<968px) {
+  .intro .heading {
+    font-size: 2rem;
+  }
+  .description {
+    padding: 0px;
+  }
+
+  .profile .box {
+    width: 60%;
+  }
+
+  .info1,
+  .info2,
+  .info3 {
+    padding: 16px;
+    font-size: 45px;
+  }
+
+  .info .lower {
+    font-size: 18px;
+  }
+
+  .second {
+    width: 90vw;
+  }
+
+  .second .photo {
+    width: 35%;
+  }
+
+  .about {
+    width: 55%;
+    padding: 20px;
+  }
+  .about .aboutContent {
+    gap: 25px;
+  }
+  .third {
+    min-height: 80vh;
+  }
+  .third .heading p {
+    padding: 10px 30px;
+    font-size: 25px;
+  }
+  .technologies .tech {
+    width: 180px;
+    height: 180px;
+  }
+
+  .fourth .projectHeading {
+    padding: 5px 60px;
+    font-size: 35px;
+  }
+  .fourth .projects{
+    padding: 35px;
+  }
+  .project .p-title{
+    font-size: 25px;
+  }
+  .project .p-about{
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
