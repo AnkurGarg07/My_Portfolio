@@ -19,6 +19,7 @@
     align-items: center;
     width: 80%;
     gap: 3px;
+    text-align: center;
   }
   .intro .description {
     line-height: 20px;
@@ -82,7 +83,7 @@
 .fourth .projects{
     margin-top: 0px;
     grid-template-columns: 1fr;
-    padding: 35px 70px;
+    padding: 35px 40px;
 }
 
 

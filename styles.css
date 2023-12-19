@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@500&family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Roboto&family=Ubuntu&display=swap');
 
 * {
   margin: 0;
@@ -6,11 +6,17 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 
 :root{
   --primaryBackground:#f6efe5;
   --secondryBackground:#ffa500;
   --textColor:#000000;
+  --buttons:'Ubuntu', sans-serif;
+  --headings:'Playfair Display', serif;
+  --textFont:'Open Sans', sans-serif;
 
 }
 /* custom scroll bar */
@@ -26,16 +32,16 @@
   border-radius: 5px;
   height: 10px;
 }
-/* .main{
+.main{
   width: 100vw;
-} */
+}
 
 .container {
   height: 100%;
 }
 /* nav bar */
 .wrapper {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 30;
 }
@@ -45,7 +51,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: orange;
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
   min-height: 72px;
 }
 nav .logo {
@@ -55,10 +61,20 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  font-size: 20px;
+}
+nav ul li a:hover{
+  color: white;
+  transition: 0.2s linear;
 }
 nav a {
   text-decoration: none;
-  color: white;
+  color: var(--textColor);
+  font-family: var(--buttons);
+}
+nav .logo img{
+  width: 55px;
+  border-radius: 50%;
 }
 nav #toggle,
 nav label {
@@ -78,7 +94,6 @@ nav label {
   }
   nav label {
     display: inline-flex;
-    color: white;
     cursor: pointer;
   }
   nav #toggle:checked ~ .menu {
@@ -112,12 +127,13 @@ nav label {
 }
 .intro .heading {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--headings);
   font-size: 2.8rem;
 }
 .description {
   width: 100%;
   padding-right: 100px;
+  font-family: var(--textFont);
 }
 .graphic {
   display: flex;
@@ -131,7 +147,7 @@ nav label {
   padding: 10px 20px;
   box-shadow: 4px 2px 5px;
   font-size: 1.1em;
-  font-family: "Noto Sans", sans-serif;
+  font-family: var(--buttons);
   transition: 0.3s linear;
 }
 
@@ -180,12 +196,12 @@ nav label {
   padding: 21px;
   font-size: 50px;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
-  opacity: 0.8;
+  font-family: var(--headings); 
 }
 .info .lower {
   font-size: 20px;
-  opacity: 0.5;
+  opacity: 0.8;
+  font-family: var(--textFont)
 }
 /* third part of first section */
 .companies {
@@ -197,6 +213,11 @@ nav label {
   justify-content: space-evenly;
   align-items: center;
   padding: 15px;
+}
+
+.companies .box{
+  mix-blend-mode: screen;
+  filter: invert(1);
 }
 
 /* second main container */
@@ -226,15 +247,16 @@ nav label {
 .about .heading {
   padding: 20px 0px;
   font-size: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--headings);
+  font-weight: 700;
 }
 
 .about .aboutContent {
   display: flex;
   flex-direction: column;
   gap: 34px;
-  opacity: 0.7;
-  font-family: "Noto Sans", sans-serif;
+  opacity: 0.9;
+  font-family: var(--textFont);
 }
 .follow {
   display: flex;
@@ -242,7 +264,7 @@ nav label {
   margin-top: 30px;
 }
 .follow .resume {
-  font-family: "Kanit", sans-serif;
+  font-family: var(--buttons);
 
   padding: 10px 18px 10px 18px;
   background-color: orange;
@@ -289,7 +311,7 @@ nav label {
   padding: 10px 50px;
   font-size: 32px;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--headings)
 }
 .technologies {
   display: flex;
@@ -298,7 +320,7 @@ nav label {
 }
 .technologies .tech {
   display: flex;
-  box-shadow: 2px 2px 5px;
+  filter: drop-shadow(6px 6px 8px black);
   width: 220px;
   height: 220px;
   margin: 18px;
@@ -322,8 +344,9 @@ nav label {
   padding: 30px;
 }
 .fourth .projectHeading {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
+  font-family: var(--headings);
   border: 2px solid orange;
   border-radius: 45px;
   background-color: orange;
@@ -370,12 +393,50 @@ nav label {
   font-size: 30px;
   font-weight: 500;
   margin-top: 15px;
+  font-family: var(--headings);
 }
 .project .p-about {
   font-size: 20px;
   margin-top: 5px;
   line-height: 30px;
+  font-family: var(--textFont);
 }
+.project .p-btns{
+  display: flex;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.project .p-btns .git{
+  border-radius: 50%;
+}
+.project .p-btns .live{
+  background-color: orange;
+}
+
+.project .p-btns button{
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  /* box-shadow: 0px 5px 10px; */
+  filter: drop-shadow(2px 2px 3px black);
+}
+.project .p-btns button .p-git{
+  color: black;
+}
+.project .p-btns button .p-btn{
+  color: black;
+  font-family: var(--textFont);
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+
+.project .p-btns .git i{
+  font-size: 27px;
+}
+
 
 /* fifth seection */
 
@@ -400,6 +461,7 @@ nav label {
   font-weight: 500;
   font-size: 40px;
   margin-bottom: 10px;
+  font-family: var(--headings);
 }
 .con #contact {
   width: 75%;
@@ -469,6 +531,7 @@ nav label {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
 

@@ -1,0 +1,79 @@
+@media (width<480px) {
+  .profile .box {
+    width: 45%;
+    padding: 0px;
+  }
+  .info1,
+  .info2,
+  .info3 {
+    font-size: 25px;
+  }
+  .info .lower {
+    font-size: 15px;
+  }
+  .second {
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+
+  .second .photo {
+    width: 65%;
+    padding: 10px;
+  }
+  .about {
+    width: 100%;
+  }
+  .about .heading {
+    text-align: center;
+  }
+  .about .aboutContent {
+    text-align: center;
+    gap: 10px;
+  }
+  .follow {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .follow .icons {
+    margin: 0px;
+  }
+  .third {
+    gap: 10px;
+  }
+  .third .heading {
+    margin-top: 40px;
+  }
+  .fourth {
+    padding: 0px;
+  }
+  .fourth .projectHeading {
+    padding: 3px 45px;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  .fourth .projects .project {
+    line-height: 25px;
+  }
+  .project .p-title {
+    font-size: 20px;
+}
+  .project .p-about {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .project .p-btns button{
+    font-size: 15px;
+  }
+  .project .p-btns .git{
+    border-radius: 50%;
+  }
+  .fifth{
+    padding: 0px;
+  }
+  .fifth .con{
+    padding: 0px;
+  }
+  .sixth{
+    padding: 20px 0px;
+  }
+}
