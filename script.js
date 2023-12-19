@@ -7,12 +7,12 @@ function scrollToSection(sectionId) {
 function SendEmail(){
 Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Username : "ankurgarg89p@gmail.com",
+    Password : "30A5AD235034D74176C4B781148705FE9DAE",
+    To : 'ankurgarg89p@gmail.com',
+    From : "ankurgarg89p@gmail.com",
+    Subject : "New Mail from \"Portfolio ~ Ankur Garg\"",
+    Body : document.getElementById("email").value+"<br>"+document.getElementById("message").value
 }).then(
   message => alert(message)
 );
