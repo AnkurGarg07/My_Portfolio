@@ -50,7 +50,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: orange;
+  background-color: var(--secondryBackground);
   padding: 0rem 1.5rem;
   min-height: 72px;
 }
@@ -271,7 +271,7 @@ nav label {
   font-family: var(--buttons);
 
   padding: 10px 18px 10px 18px;
-  background-color: orange;
+  background-color: var(--secondryBackground);
   font-size: 18px;
   border-radius: 30px;
   cursor: pointer;
@@ -301,9 +301,9 @@ nav label {
 .third .heading {
   font-size: 40px;
   font-weight: 500;
-  border: 2px solid orange;
+  border: 2px solid var(--secondryBackground);
   border-radius: 45px;
-  background-color: orange;
+  background-color: var(--secondryBackground);
   box-shadow: 0px 5px 10px;
   cursor: pointer;
   transition: transform linear 0.4s 0s;
@@ -351,9 +351,9 @@ nav label {
   font-size: 35px;
   font-weight: 500;
   font-family: var(--headings);
-  border: 2px solid orange;
+  border: 2px solid var(--secondryBackground);
   border-radius: 45px;
-  background-color: orange;
+  background-color: var(--secondryBackground);
   box-shadow: 0px 5px 10px;
   cursor: pointer;
   padding: 10px 35px;
@@ -414,7 +414,7 @@ nav label {
   border-radius: 50%;
 }
 .project .p-btns .live{
-  background-color: orange;
+  background-color: var(--secondryBackground);
 }
 
 .project .p-btns button{
@@ -472,7 +472,7 @@ nav label {
   /* height: 290px; */
   border-radius: 10px;
   padding: 7px 15px;
-  background: #edddd0;
+  background: var(--secondryBackground)
 }
 .fifth .con .inputs {
   display: flex;
